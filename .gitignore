@@ -1,0 +1,63 @@
+# ──────────────────────────────────────────────────────────────
+# .gitignore — Professional Data Engineering Code Review
+# ──────────────────────────────────────────────────────────────
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# pytest / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+*.log
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+*.egg
+
+# OS generated
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Secrets & credentials (never commit these)
+.env
+*.pem
+*.key
+secrets.json
+
+# Large processed output files (optionally tracked via DVC)
+data/processed/
+data/processed/*.parquet
+data/processed/*.csv
+
+# Internal project documentation to exclude
+INTERVIEW_NOTES.md
+FINAL_PROJECT_REPORT.md
+
+# Temporary files
+*.tmp
+*.bak
